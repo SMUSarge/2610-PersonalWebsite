@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="cormorant-garamond-normal">
-      <h1>J.R. Souders</h1>
+      <h1><a href="index.html">J.R. Souders</a></h1>
       <nav>
         <a href="index.html">Home</a>
 
@@ -27,8 +27,8 @@
     </header>
     <main class="playfair-display-normal">
       <h1>Contact</h1>
-      <form>
-        <p>
+      <!-- <form> -->
+      <!-- <p>
           <label
             >Enter your first name:
             <input type="text" placeholder="Enter a name"
@@ -49,15 +49,52 @@
         <p>
           <label
             >Explain your interest or concern:
-            <input type="text" placeholder="Tell us your problems..."
-          /></label>
+            <input type="text" placeholder="Tell us your problems..." /></label
+          ><br />
+          <input type="submit" value="Submit" />
         </p>
+      </form> -->
+      <form>
+        <div class="container playfair-display-normal">
+          <!-- <form action="action_page.php"> -->
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell me your problems...."
+              style="height: 200px"
+            ></textarea
+            >
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </form>
-      <form></form>
     </main>
-    <footer class="cormorant-garamond-normal">
-      <span style="font-size: 1em; margin-right: 0.5em">&#9742;</span>&copy;
-      2026 J.R. Souders
-    </footer>
+    <footer class="cormorant-garamond-normal">&copy; 2026 J.R. Souders</footer>
   </body>
 </html>
