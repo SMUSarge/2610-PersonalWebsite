@@ -24,6 +24,10 @@ nav > a {
   text-decoration: none;
 }
 
+nav > a:hover {
+  color: lightseagreen;
+}
+
 li {
   text-decoration: none;
 }
@@ -41,7 +45,7 @@ img {
 }
 
 p {
-  display: grid;
+  display: block;
   grid-column: 1 / -1;
   justify-self: center;
   width: 50vw;
@@ -104,4 +108,11 @@ footer > span {
   align-items: flex-start;
   margin-left: 0.5em;
   border: 1px solid black;
+}
+h1 > a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 > a:hover {
+  color: lightseagreen;
 }
