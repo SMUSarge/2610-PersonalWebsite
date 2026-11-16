@@ -9,7 +9,7 @@ header {
   flex-grow: 1;
   padding: 0 2em 0 2em;
   background-color: var(--color-3);
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -47,6 +47,14 @@ main {
   min-height: 100vh;
   /* border: 1px solid #ccc; */
   background-color: var(--color-1);
+}
+ul > li {
+  margin-bottom: 0.5em;
+  text-decoration: none;
+}
+.contact-info {
+  margin-top: 2em;
+  text-align: left;
 }
 footer {
   display: flex;

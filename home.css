@@ -11,7 +11,7 @@ header {
   flex-grow: 1;
   padding: 0 2em 0 2em;
   background-color: var(--color-3);
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -110,12 +110,12 @@ li > a:hover {
   color: var(--color-5);
 }
 
-/* .divsize {
+.divsize {
   width: 80vw;
   justify-self: center;
   display: flex;
   flex-direction: column;
-} */
+}
 
 .cormorant-garamond-normal {
   font-family: "Cormorant Garamond", serif;
@@ -153,24 +153,21 @@ li > a:hover {
   align-items: center;
   margin: 1em 0;
 }
-
-.filler {
-  height: 35vh;
-  width: 100%;
-  flex-shrink: 0;
+.index-title {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 1em 0;
 }
-
-.form-contact {
-  padding: 1em;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: var(--color-4);
-}
-
 :root {
   --color-1: #f0eee9;
   --color-2: #e8e0d0;
   --color-3: #d4c9b0;
   --color-4: #c4a882;
   --color-5: #9e7b56;
+}
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }
