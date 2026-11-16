@@ -11,6 +11,10 @@ header {
   flex-grow: 1;
   padding: 0 2em 0 2em;
   background-color: var(--color-3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 nav {
@@ -106,12 +110,12 @@ li > a:hover {
   color: var(--color-5);
 }
 
-.divsize {
+/* .divsize {
   width: 80vw;
   justify-self: center;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .cormorant-garamond-normal {
   font-family: "Cormorant Garamond", serif;
@@ -131,7 +135,6 @@ li > a:hover {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 25px;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   box-shadow: 14px 7px 15px 3px rgba(77, 77, 73, 0.28);
   border-radius: 8px;
   background-color: var(--color-3);
