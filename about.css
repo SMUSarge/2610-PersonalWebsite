@@ -1,0 +1,122 @@
+body {
+  background-color: var(--color-2);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-grow: 1;
+  padding: 0 2em 0 2em;
+  background-color: var(--color-3);
+}
+
+nav {
+  display: flex;
+  flex-grow: 3;
+  justify-content: flex-end;
+}
+
+nav > a {
+  align-content: center;
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  color: var(--color-5);
+}
+
+h1 {
+  text-align: center;
+  margin: 1em 0;
+}
+
+section {
+  background-color: var(--color-2);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column: 1 / -1;
+  padding-left: 1em;
+  flex-wrap: wrap;
+}
+.polaroid {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 14px 7px 15px 3px rgba(77, 77, 73, 0.28);
+  border-radius: 8px;
+  background-color: var(--color-1);
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px 10px;
+  background-color: var(--color-4);
+  /* width: 53vw; */
+  align-self: center;
+  justify-content: center;
+  border: 1px solid var(--color-5);
+  align-items: center;
+  margin: 1em 0;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  grid-column: 1 / -1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-direction: row;
+  padding: 1em;
+  background-color: var(--color-3);
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+footer > span {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 0.5em;
+  /* border: 1px solid black; */
+}
+
+/* Color variables (Color Palette) */
+
+:root {
+  --color-1: #f0eee9;
+  --color-2: #e8e0d0;
+  --color-3: #d4c9b0;
+  --color-4: #c4a882;
+  --color-5: #9e7b56;
+}
+
+/* Font styles (Typography) */
+
+.cormorant-garamond-normal {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.playfair-display-normal {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
