@@ -160,3 +160,10 @@ img {
   display: flex;
   flex-direction: column;
 }
+
+/* main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1em;
+} */
